@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+{% extends "header.html" %}
+
+{% block content %}
+<h1>Fuck off!</h1>
+<form method="post" , name="full_text">
+    {{ form.csrf_token }}
+    {{ form.full_text }}
+    <p></p><input type="button" id="read_button" value="Translyat This!"></p>
+</form>
+{% endblock %}
