@@ -3,7 +3,7 @@
 </script>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script>window.jQuery || document.write('<script src="{{
   url_for('static', filename='js/jquery.js') }}">\x3C/script>')
 </script>
@@ -13,6 +13,9 @@
 
 
 <head lang="en">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <meta charset="UTF-8">
     <title>Транслятор - Translyator</title>
 </head>

@@ -22,9 +22,8 @@ def get_sentence_weight(sentence):
     :return: weight as a float
     """
     weight = 0
-    true_length = 0
+    true_length = 1
     words = word_tokenizer.tokenize(sentence)
-    print 'sentence length: ' + str(len(words))
     for word in words:
         norm = morph.parse(word)[0].normal_form
         try:

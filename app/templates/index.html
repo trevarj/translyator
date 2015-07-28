@@ -3,10 +3,23 @@
 {% extends "header.html" %}
 
 {% block content %}
-<h1>Fuck off!</h1>
-<form method="post" , name="full_text">
-    {{ form.csrf_token }}
-    {{ form.full_text }}
-    <p></p><input type="button" id="read_button" value="Translyat This!"></p>
-</form>
+<body>
+    <div id="container">
+        <div id="center-panel">
+            <form id="full_text" method="post" , name="full_text">
+                {{ form.csrf_token }}
+                {{ form.full_text_input }}
+                <p></p><input type="button" id="read_button" value="Translyat This!"></p>
+            </form>
+            <div id="reader-div">
+            </div>
+        </div>
+        <div id="left-panel">
+        </div>
+        <div id="right-panel">
+            <script src="{{ url_for('static', filename='js/slider.js') }}">$.noConflict();</script>
+            <div id="slider" hidden="true"></div>
+        </div>
+    </div>
+</body>
 {% endblock %}
